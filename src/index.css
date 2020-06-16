@@ -1,13 +1,124 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  line-height: 17px;
+  font-family: "DejaVu Serif", serif;
+  font-weight: bold;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 10000;
+}
+.container {
+  max-width: 1250px;
+  height: 100%;
+  padding: 0 49px 0 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+
+}
+.navBurger {
+  display: flex;
+  flex-direction: row;
+}
+img.cart {
+  display: flex;
+  height: 21px;
+  padding: 0 50px 0 0;
+}
+.cartCount {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  color: #fff;
+  background-color: #00b6fe;
+  font-size: 11px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1px 0;
+  transform: translateY(-9px) translateX(13px);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+  border-bottom: 2px solid #dcdcdc;
+  position: relative;
+}
+.slideshow {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+    max-width: 580px;
+    margin: 37px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.slideshow img {
+    width: 100%;
+}
+
+.description {
+  width: 50%;
+  padding: 25px 0px;
+  border-left: 2px solid #dcdcdc;
+}
+
+.bdg-light {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 5px 12px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+}
+
+table tr {
+  vertical-align: top;
+}
+table tr td:nth-child(1){
+  font-size: 0.9rem;
+}
+
+table tr td {
+  padding: 10px 37px;
+}
+.info {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 30px 0;
+  height: 68px;
+  width: auto;
+  background-color: #00b6fe;
+  justify-content: center;
+}
+.i {
+  position: absolute;
+  left: -2px;
+  width: 70px;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #00abf0;
+  line-height: 68px;
+  cursor: pointer;
+}
+
+.switchLight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
